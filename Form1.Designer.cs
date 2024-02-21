@@ -28,27 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textNombreUsuario = new System.Windows.Forms.TextBox();
+            this.textGenero = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnCalcular = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(102, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Agregar Usuario";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnAgregar.Location = new System.Drawing.Point(102, 125);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(175, 36);
+            this.btnAgregar.TabIndex = 0;
+            this.btnAgregar.Text = "Agregar Usuario";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -68,19 +72,19 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Genero";
             // 
-            // textBox1
+            // textNombreUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 22);
-            this.textBox1.TabIndex = 3;
+            this.textNombreUsuario.Location = new System.Drawing.Point(102, 33);
+            this.textNombreUsuario.Name = "textNombreUsuario";
+            this.textNombreUsuario.Size = new System.Drawing.Size(226, 22);
+            this.textNombreUsuario.TabIndex = 3;
             // 
-            // textBox2
+            // textGenero
             // 
-            this.textBox2.Location = new System.Drawing.Point(102, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 22);
-            this.textBox2.TabIndex = 4;
+            this.textGenero.Location = new System.Drawing.Point(102, 68);
+            this.textGenero.Name = "textGenero";
+            this.textGenero.Size = new System.Drawing.Size(226, 22);
+            this.textGenero.TabIndex = 4;
             // 
             // label3
             // 
@@ -119,31 +123,71 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Física: Cuántica S/. 150.00";
             // 
-            // button2
+            // BtnCalcular
             // 
-            this.button2.Location = new System.Drawing.Point(405, 221);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(181, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "CALCULAR LIBRO";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BtnCalcular.Location = new System.Drawing.Point(405, 221);
+            this.BtnCalcular.Name = "BtnCalcular";
+            this.BtnCalcular.Size = new System.Drawing.Size(181, 23);
+            this.BtnCalcular.TabIndex = 9;
+            this.BtnCalcular.Text = "CALCULAR LIBRO";
+            this.BtnCalcular.UseVisualStyleBackColor = true;
+            this.BtnCalcular.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(568, 33);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(569, 72);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(18, 17);
+            this.checkBox2.TabIndex = 11;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(569, 124);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(18, 17);
+            this.checkBox3.TabIndex = 12;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(569, 165);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(18, 17);
+            this.checkBox4.TabIndex = 13;
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.checkBox4);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.BtnCalcular);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textGenero);
+            this.Controls.Add(this.textNombreUsuario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAgregar);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -153,16 +197,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textNombreUsuario;
+        private System.Windows.Forms.TextBox textGenero;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnCalcular;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
     }
 }
 
