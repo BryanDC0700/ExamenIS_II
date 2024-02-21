@@ -8,12 +8,8 @@ namespace ExamenIS_II
 {
     internal class Class1
     {
-        public void insertarUsuario(Clientes clientes)
-        {
-            using (var bd = new Clientes())
-            {
-                bd.clientes = clientes;
-            }
-        }
+        public string Nombre { get; set; }
+        public string Genero { get; set; }
+        public
     }
 }
